@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import Hero from "./components/hero/Hero";
+import Education from "./components/education/Education"
+import About from "./components/about/About"
 
 import {CV} from "./CV/CV"
 
@@ -11,6 +13,8 @@ function App() {
     
       <div>
         <Hero hero={hero}></Hero>
+        <About about = {hero.aboutMe}></About>
+        <Education education ={education}></Education>
       </div>
     
     
