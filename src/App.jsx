@@ -3,6 +3,8 @@ import './App.css'
 import Hero from "./components/hero/Hero";
 import Education from "./components/education/Education"
 import About from "./components/about/About"
+import Experience from './components/experience/Experience';
+import More from './components/more/More';
 
 import {CV} from "./CV/CV"
 
@@ -13,8 +15,17 @@ function App() {
     
       <div>
         <Hero hero={hero}></Hero>
-        <About about = {hero.aboutMe}></About>
+        <About hero = {hero.aboutMe}></About>
+        <button>Education</button>
+        <button>Experience</button>
         <Education education ={education}></Education>
+        <Experience experience = {experience}></Experience>
+        <More
+        languages={languages}
+        habilities={habilities}
+        volunteer={volunteer}
+        ></More>
+
       </div>
     
     
